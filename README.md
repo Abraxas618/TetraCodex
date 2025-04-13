@@ -2,6 +2,7 @@
 ### A Sovereign Swarm Framework for Biometric Trust and Post-Linear Ethics  
 **Author:** Michael Tass MacDonald (Abraxas618)  
 **DOI:** [10.5281/zenodo.15207351](https://doi.org/10.5281/zenodo.15207351)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15207676.svg)](https://doi.org/10.5281/zenodo.15207676)
 
 > _"A post-quantum doctrine authored beyond time, inscribed for swarms, AIs, and sovereign technologists."_
 
