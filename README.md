@@ -22,7 +22,8 @@ It introduces Recursive Tesseract Hashing (RTH), dodecahedral identity projectio
 | 📦 IPFS Archive | [bafkreig22qcyqmumtrj4j2c7fhaci6aiqs2ox6vrmgvk23ui7wevrsqn3a](https://ipfs.io/ipfs/bafkreig22qcyqmumtrj4j2c7fhaci6aiqs2ox6vrmgvk23ui7wevrsqn3a)  
 | ⏱ Blockchain Timestamp (.ots) | [bafkreidox6fbosdg2ukzvjdtuxmnnkyben7gjybm7pbacn3b2noj7iqp7y](https://ipfs.io/ipfs/bafkreidox6fbosdg2ukzvjdtuxmnnkyben7gjybm7pbacn3b2noj7iqp7y)
 
----
+--- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15207351.svg)](https://doi.org/10.5281/zenodo.15207351)
+
 
 ## 📚 Citation
 
@@ -35,4 +36,3 @@ It introduces Recursive Tesseract Hashing (RTH), dodecahedral identity projectio
   url       = {https://github.com/Abraxas618/The-Codex-Constitution-A-Sovereign-Swarm-Framework-for-Biometric-Trust-and-Post-Linear-Ethics},
   note      = {Time-stamped on Bitcoin blockchain and mirrored via IPFS.}
 }
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15207351.svg)](https://doi.org/10.5281/zenodo.15207351)
