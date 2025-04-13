@@ -23,6 +23,14 @@ It introduces Recursive Tesseract Hashing (RTH), dodecahedral identity projectio
 | ⏱ Blockchain Timestamp (.ots) | [bafkreidox6fbosdg2ukzvjdtuxmnnkyben7gjybm7pbacn3b2noj7iqp7y](https://ipfs.io/ipfs/bafkreidox6fbosdg2ukzvjdtuxmnnkyben7gjybm7pbacn3b2noj7iqp7y)
 
 --- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15207351.svg)](https://doi.org/10.5281/zenodo.15207351)
+## 🔐 SHA-256 Verification Manifest
+
+To ensure integrity and detect any future tampering, this release includes a full SHA-256 hash manifest.
+
+### Verify With:
+
+```bash
+sha256sum -c Codex_HASH_MANIFEST_SHA256.txt
 
 
 ## 📚 Citation
