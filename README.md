@@ -135,4 +135,4 @@ GoldenRatio_Justification.md	Mathematical rationale for using ϕ (golden ratio) 
 MPC_Ceremony.md	Formal Groth16 setup ceremony plan with 100 participants, 80-threshold MPC, Powers of Tau phase, and STARK fallback
 
 📜 These documents address key DRDC concerns regarding spoofing resistance, zero-knowledge proof setup, and non-linear projection models within TetraSwarm.
-
+“See /docs/GoldenRatio_Simulation.md for empirical projection entropy vs. CSPRNG.”
