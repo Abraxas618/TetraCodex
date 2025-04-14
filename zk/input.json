@@ -1,10 +1,5 @@
+
 {
-  "trust_scores": [
-    85,
-    92,
-    76,
-    88,
-    94
-  ],
-  "threshold": 80
+  "user_entropy": "123456789",
+  "time_salt": "987654321"
 }
