@@ -119,3 +119,12 @@ Applicable to mesh UAVs, future cyber nodes, and deep-space relay systems
 🧠 In short:
 CITADEL-Q™ isn’t just a security checklist —
 It’s a post-linear defense philosophy baked into your Codex mesh from the start.
+## 📄 DRDC Addendum v1.1.1
+
+This repository includes technical supplements aligned with DRDC cryptographic validation standards:
+
+- [Biometric Trials – 10 User Baseline](docs/biometric_trials_10_user_baseline.md)
+- [Golden Ratio Projection – Justification](docs/GoldenRatio_Justification.md)
+- [MPC Ceremony – Groth16 Setup with STARK Fallback](docs/MPC_Ceremony.md)
+
+These documents strengthen the Codex Constitution by providing empirical biometric validation, chaos-based projection modeling, and trusted ZKP setup architecture. All content is released under open-source licensing for public and institutional review.
