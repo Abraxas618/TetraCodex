@@ -1,0 +1,28 @@
+
+# === Circom + SnarkJS Build Artifacts ===
+*.r1cs
+*.wtns
+*.zkey
+*.sym
+*.wasm
+
+# === Node Modules (if applicable) ===
+node_modules/
+
+# === Logs / Temp ===
+*.log
+*.tmp
+*.bak
+
+# === Python Cache ===
+__pycache__/
+*.pyc
+
+# === OS Junk ===
+.DS_Store
+Thumbs.db
+
+# === IPFS or Metadata Exports (optional) ===
+*.car
+*.ipfs
+*.ots
