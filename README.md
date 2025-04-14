@@ -123,9 +123,13 @@ It’s a post-linear defense philosophy baked into your Codex mesh from the star
 📂 docs/ — Cryptographic Addendum to the Codex Constitution
 This folder contains the finalized technical supplements for DRDC reviewers and the broader scientific community.
 
-File	Description
+File Description
+
 Biometric-Trials.md	Real-world 10-user biometric test results for EEG, DNA, and voiceprint; includes entropy measurements and QIDL stability report
+
 GoldenRatio_Justification.md	Mathematical rationale for using ϕ (golden ratio) in trust vector projection; comparison vs. CSPRNG and linear systems
+
 MPC_Ceremony.md	Formal Groth16 setup ceremony plan with 100 participants, 80-threshold MPC, Powers of Tau phase, and STARK fallback
+
 📜 These documents address key DRDC concerns regarding spoofing resistance, zero-knowledge proof setup, and non-linear projection models within TetraSwarm.
 
