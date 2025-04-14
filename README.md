@@ -136,3 +136,44 @@ MPC_Ceremony.md	Formal Groth16 setup ceremony plan with 100 participants, 80-thr
 
 📜 These documents address key DRDC concerns regarding spoofing resistance, zero-knowledge proof setup, and non-linear projection models within TetraSwarm.
 “See /docs/GoldenRatio_Simulation.md for empirical projection entropy vs. CSPRNG.”
+# Codex-EV TrustMesh — ZK-Proof Circuit
+
+Author: Michael Tass MacDonald (Abraxas618)  
+ORCID: [0009-0005-6468-7651](https://orcid.org/0009-0005-6468-7651)  
+Territory: Treaty 8 — Dënesųłiné Technologist  
+Version: April 14, 2025
+
+## 📜 Purpose
+
+This circuit implements a quantum-hardened zero-knowledge hashing system to verify trust in extracellular vesicle (EV) biosignals using recursive entropy, Poseidon hash, and beacon timestamps.
+
+## 🔐 Features
+
+- ✅ Recursive Poseidon hashing
+- ✅ Swarm fingerprint encoding
+- ✅ DRDC-compatible cryptographic reproducibility
+- ✅ 100% open-source & reproducible
+
+## 📁 Contents
+
+- `zk_trust.circom` – Circuit definition
+- `compile.sh` – Build pipeline
+- `witness.wtns`, `proof.json`, `public.json` – Proof data
+- `verification_key.json` – To validate proofs
+- `zk_trust_js/` – Auto-generated witness generator (WASM)
+
+## 🧪 To Reproduce:
+
+Install:
+```bash
+npm install -g circom snarkjs
+sudo apt install nodejs npm
+Then:
+chmod +x compile.sh
+./compile.sh
+✅ Output
+On success:
+[INFO] snarkJS: OK!
+🔗 License
+MIT / Apache 2.0 dual-licensed.
+Originally developed as part of Codex Constitution framework.
