@@ -43,19 +43,6 @@ It introduces Recursive Tesseract Hashing (RTH), dodecahedral identity projectio
 | ⏱ Blockchain Timestamp (.ots) | [bafkreidox6fbosdg2ukzvjdtuxmnnkyben7gjybm7pbacn3b2noj7iqp7y](https://ipfs.io/ipfs/bafkreidox6fbosdg2ukzvjdtuxmnnkyben7gjybm7pbacn3b2noj7iqp7y) |
 
 ---
-
-## 🔐 SHA-256 Verification Manifest
-
-This release includes a full `Codex_HASH_MANIFEST_SHA256.txt` file. Use it to verify archive integrity.
-
-### Verify With:
-
-```bash
-sha256sum -c Codex_HASH_MANIFEST_SHA256.txt
-```
-
----
-
 ## 📚 Citation
 
 ```bibtex
