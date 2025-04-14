@@ -45,3 +45,40 @@ Then run:
 ```bash
 cd docs/zk
 bash compile.sh
+This will:
+
+Compile the circuit to .r1cs and .wasm
+
+Run a Powers of Tau trusted setup
+
+Generate the witness and zk-SNARK proof
+
+Output proof.json and public.json
+
+Verify the proof against verification_key.json
+
+✅ Output Files
+File	Purpose
+zk_trust.r1cs	Compiled constraint system
+zk_trust.wasm	Witness generation binary
+circuit_final.zkey	Final proving key
+witness.wtns	Witness values for inputs
+proof.json	ZK proof
+public.json	Public inputs for verifier
+verification_key.json	Public verifier key
+📦 Example Use Case
+This circuit can be embedded into the Codex backend or a smart contract verifier to validate:
+
+Node identity
+
+Entropy freshness
+
+Swarm membership
+
+Temporal anchoring
+
+All without exposing raw biometrics.
+
+🛡 License
+This module is released under the MIT License, as part of the Codex Constitution project:
+➡️ https://github.com/Abraxas618
