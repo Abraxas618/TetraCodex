@@ -83,5 +83,6 @@ This system was not created for profit or control. It was built for remembrance.
 > So don’t just secure the future — **imagine it**.
 
 — *Michael Tass MacDonald (Abraxas618)*  
-Treaty 10 Territory, Canada  
+Treaty 8 Territory, Canada  
 2025-04-14
+https://medium.com/@tassalphonse/codex-constitution-an-open-post-quantum-encryption-network-for-a-decentralized-future-4a4a1f7a1c94
