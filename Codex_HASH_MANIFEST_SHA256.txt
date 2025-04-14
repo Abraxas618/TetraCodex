@@ -1,7 +1,7 @@
 92b6f4e70dc1bfab80abaffbe00adf440f9a2ba9d4f8c552292778a47ec4311d  The-Codex-Constitution-A-Sovereign-Swarm-Framework-for-Biometric-Trust-and-Post-Linear-Ethics-main/Abraxas618_Research_Identity_Card.pdf
 a7847c08d17e32709a82db962d53f29df09045e72708ba4cb73a627cf9489730  The-Codex-Constitution-A-Sovereign-Swarm-Framework-for-Biometric-Trust-and-Post-Linear-Ethics-main/CITADEL.md
 26466a162ba9e905cddfcf64f2d84395a4d95e459e85273bcb20c96f5fe25364  The-Codex-Constitution-A-Sovereign-Swarm-Framework-for-Biometric-Trust-and-Post-Linear-Ethics-main/Codex_Combined_Blockchain_Archive.zip
-b9468c0c9048d9032b782e3398d025eff3d45d95a45102c46d195eae47ee4b06  The-Codex-Constitution-A-Sovereign-Swarm-Framework-for-Biometric-Trust-and-Post-Linear-Ethics-main/Codex_HASH_MANIFEST_SHA256.txt
+168438b24e0b16580ef698f627359fe54e560809d0bfb5d8cc71ec9ab100678f  The-Codex-Constitution-A-Sovereign-Swarm-Framework-for-Biometric-Trust-and-Post-Linear-Ethics-main/Codex_HASH_MANIFEST_SHA256.txt
 010a71dc6350f8c424c26e54d8c4d1e30299c741b14e9647fd787dfd270409cd  The-Codex-Constitution-A-Sovereign-Swarm-Framework-for-Biometric-Trust-and-Post-Linear-Ethics-main/README.md
 6ebf8a174866d5159aa473a5d8d6ab01237e64e02cfbc2013761d35c9fa20ffe  The-Codex-Constitution-A-Sovereign-Swarm-Framework-for-Biometric-Trust-and-Post-Linear-Ethics-main/The Codex Constitution A Sovereign Swarm Framework for Biometric Trust and Post-Linear Ethics.pdf
 dad40588328c9c53c4e85f29c024780884b4ebfab161aaad6e88fd8958ca0dd8  The-Codex-Constitution-A-Sovereign-Swarm-Framework-for-Biometric-Trust-and-Post-Linear-Ethics-main/The Codex Constitution A Sovereign Swarm Framework for Biometric Trust and Post-Linear Ethics.pdf.ots
