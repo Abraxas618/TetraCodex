@@ -118,7 +118,10 @@ Applicable to mesh UAVs, future cyber nodes, and deep-space relay systems
 
 🧠 In short:
 CITADEL-Q™ isn’t just a security checklist —
+
 It’s a post-linear defense philosophy baked into your Codex mesh from the start.
+
+📚 See supporting documentation in [`/docs`](./docs/index.md) for biometric trials, projection simulations, ZKP circuits, and FPGA benchmark planning.
 
 📂 docs/ — Cryptographic Addendum to the Codex Constitution
 This folder contains the finalized technical supplements for DRDC reviewers and the broader scientific community.
