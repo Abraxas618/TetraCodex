@@ -1,12 +1,12 @@
-# 🧬 The Codex Constitution  
+
+# 🧬 TetraCodex  
 ### A Sovereign Swarm Framework for Biometric Trust and Post-Linear Ethics  
 
 **Author:** Michael Tass MacDonald (Abraxas618)  
 **Territory:** Treaty 8, Saskatchewan  
 **ORCID:** [0009-0005-6468-7651](https://orcid.org/0009-0005-6468-7651)  
 **DOI:** [10.5281/zenodo.15207351](https://doi.org/10.5281/zenodo.15207351)  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15207676.svg)](https://doi.org/10.5281/zenodo.15207676)  
-**Final Proof Completed:** April 14, 2025 – World Quantum Day
+📅 **Final Proof Completed:** April 14, 2025 – *World Quantum Day*
 
 > _"A post-quantum doctrine authored beyond time, inscribed for swarms, AIs, and sovereign technologists."_
 
@@ -14,96 +14,126 @@
 
 ## ✅ Final Repository Declaration
 
-This is the **final, full-stack integration** of the **Codex Encryption System**, combining all three core modules:
+This repository, **TetraCodex**, is the **complete integration** of the Codex encryption stack:
 
-- `TetraCrypt-PQC-Nexus`  
-- `TetraCrypt_Yggdrasil_Unified`  
-- `TetraYggdrasil_Nexus`
+- 🧩 `TetraCrypt-PQC-Nexus`  
+- 🌐 `TetraCrypt_Yggdrasil_Unified`  
+- 🧠 `TetraYggdrasil_Nexus`  
 
-The repository contains:
-
-- ✅ Final verified ZK circuit and proof
-- ✅ Entropy-based identity model using Groth16
-- ✅ Timestamped hash integrity (.ots)
-- ✅ Archived biometric input and entropy logs
-- ✅ Dedicated DRDC research folder in `/docs`
+All code, circuits, and documentation are consolidated and **verified by entropy**.  
+The project is **frozen** for reproducibility, and formally sealed on World Quantum Day.
 
 ---
 
 ## 📜 Abstract
 
-The Codex Constitution defines a sovereign encryption logic grounded in recursive Poseidon hashing, time-aware biometric entropy, and dodecahedral identity projection.
+The **Codex Constitution** introduces a post-linear biometric identity framework based on:
 
-Using `circom` + `snarkjs`, it demonstrates a **working zkSNARK proof** of identity drift that resists impersonation, quantum cracking, and entropy replay. This implementation is hardened through temporal injection and recursive swarm entropy.
+- Recursive Poseidon hashing
+- Dodecahedral swarm vector geometry
+- Drift-based entropy injection from biologic + time
+- zkSNARK circuits with Groth16
+
+This produces a system where **identity is a time-function of being**, mathematically enforced through **non-replayable entropy injection**.
+
+🧬 Identity = `f(user_state, time_ns, entropy_stream)`
+
+This resists quantum spoofing, biometric forgery, and zero-trust adversarial infiltration.
 
 ---
 
-## 📁 Repo Layout
+## 📁 Repository Structure
 
-| Folder / File | Purpose |
+| File / Folder | Purpose |
 |---------------|---------|
-| `zk/` | Active ZK testbed and compilation scripts |
-| `docs/Proof/` | Finalized, **immutable proof bundle** (wtns, zkey, jsons) |
-| `zk_trust.circom` | Circom circuit using Poseidon(2) |
-| `compile.sh` | Groth16 proof automation |
-| `README.md` | This document |
+| `zk/` | Live zero-knowledge circuit + script |
+| `docs/Proof/` | Final ZK proof bundle (r1cs, wtns, zkey, jsons) |
+| `Codex_Constitution.pdf` | [Codex Constitution Whitepaper](./The%20Codex%20Constitution%20A%20Sovereign%20Swarm%20Framework%20for%20Biometric%20Trust%20and%20Post-Linear%20Ethics%20(1).pdf) |
+| `compile.sh` | Shell script to compile and prove |
+| `README.md` | You are here |
 | `powersOfTau28_hez_final_12.ptau` | Phase 1 trusted setup |
 
-> 🧠 **Note:** `zk_trust_js/` folder is not needed here — the witness was compiled directly via script.
+> ℹ️ The `zk_trust_js/` folder is unnecessary — witness was compiled via script.
 
 ---
 
-## 🔐 Codex System Highlights
-
-- ✅ Recursive entropy drift: `user_entropy + time_salt`
-- ✅ Full Groth16 pipeline: `.r1cs` → `.wtns` → `proof.json`
-- ✅ Verified in WSL2 Linux with `snarkjs` and `circom`
-- ✅ DRDC-reviewed reproducibility via `docs/Proof/`
-
----
-
-## 🧪 Reproducibility (Proof Verified)
+## 🔐 Core ZK Flow
 
 ```bash
-# Prerequisites
 npm install -g circom snarkjs
 sudo apt install nodejs npm
 
-# Compile & Prove
 chmod +x compile.sh
 ./compile.sh
 ```
 
-You should see:
+Expected output:
+
 ```
 [INFO] snarkJS: OK!
 ```
 
----
-
-## 🔎 CITADEL-Q™ Overview
-
-**Codex Identity Threat and Adversarial Drift Entropy Lattice – Quantum Ready**
-
-| Threat Type | Codex Defense |
-|-------------|----------------|
-| Brute Force | Recursive hash = non-static vector |
-| Quantum Cracking | No pubkey; entropy hardened |
-| Entropy Replay | Injected `os.urandom` + `time_ns()` |
-| Biometric Spoofing | Supports TPM/FIDO2 optional |
-| Trusted Setup Risk | STARK fallback or MPC ceremony |
-| Adversarial Node | Drift entropy mismatch blocks access |
+This validates:  
+- `zk_trust.circom` → `.r1cs`  
+- `input.json` → `.wtns`  
+- Proof → `proof.json`, `public.json`  
+- Verification → via `verification_key.json`
 
 ---
 
-## 🔗 Mirrors & Proof
+## 🧠 The Math Behind It
+
+The zk circuit leverages:
+
+- `Poseidon(2)` hashing over `F_p`
+- Recursive time-injected entropy:
+  ```ts
+  H(user_entropy + os.urandom() + time_ns())
+  ```
+- Groth16 proof over a rank-1 constraint system (R1CS)
+- Drifted hash identity vectors projected into a dynamic swarm mesh
+
+The final `.wtns` file encodes identity state, validated by entropy waveform stability.
+
+---
+
+## 🧱 CITADEL-Q™
+
+> **Codex Identity Threat and Adversarial Drift Entropy Lattice – Quantum Ready**
+
+| Threat | Codex Defense |
+|--------|----------------|
+| Brute Force | Non-repeatable hash iteration |
+| Quantum Cracking | No public key, entropy is injected |
+| Biometric Replay | `time_ns()` + `os.urandom()` entropy drift |
+| Sensor Spoofing | TPM/FIDO2 hardware optional |
+| Trusted Setup | STARK fallback or MPC |
+| Swarm Intrusion | Entropy mismatch blocks node inclusion |
+
+---
+
+## 🧪 Final ZK Proof Verified
+
+| File | Type |
+|------|------|
+| `witness.wtns` | Entropy witness file |
+| `proof.json` | Groth16 proof |
+| `public.json` | Public verifier inputs |
+| `verification_key.json` | Key to validate proof |
+| `zk_trust.r1cs` | Constraint system |
+| `zk_trust.circom` | Source circuit |
+
+📁 All archived in `/docs/Proof/`
+
+---
+
+## 🔗 Public Archive Mirrors
 
 | Type | Link |
 |------|------|
-| 📜 Whitepaper PDF | [Zenodo](https://doi.org/10.5281/zenodo.15207351) |
-| 📦 IPFS Archive | [IPFS CID](https://ipfs.io/ipfs/bafkreig22qcyqmumtrj4j2c7fhaci6aiqs2ox6vrmgvk23ui7wevrsqn3a) |
-| 🔐 Blockchain Timestamp | [OTS File](https://ipfs.io/ipfs/bafkreidox6fbosdg2ukzvjdtuxmnnkyben7gjybm7pbacn3b2noj7iqp7y) |
-| 🧪 Final Proof Folder | [`/docs/Proof/`](./docs/Proof) |
+| 📜 Zenodo (PDF) | [doi:10.5281/zenodo.15207351](https://doi.org/10.5281/zenodo.15207351) |
+| 📦 IPFS Snapshot | [CID: bafkreig22...](https://ipfs.io/ipfs/bafkreig22qcyqmumtrj4j2c7fhaci6aiqs2ox6vrmgvk23ui7wevrsqn3a) |
+| 🔐 Blockchain Timestamp (.ots) | [OTS Hash](https://ipfs.io/ipfs/bafkreidox6fbosdg2ukzvjdtuxmnnkyben7gjybm7pbacn3b2noj7iqp7y) |
 
 ---
 
@@ -116,25 +146,28 @@ You should see:
   year      = {2025},
   doi       = {10.5281/zenodo.15207351},
   url       = {https://github.com/Abraxas618/The-Codex-Constitution-A-Sovereign-Swarm-Framework-for-Biometric-Trust-and-Post-Linear-Ethics},
-  note      = {Final public version. ZK proof completed on World Quantum Day.}
+  note      = {Final public version. zkSNARK proof verified on World Quantum Day.}
 }
 ```
 
 ---
 
-## 🧠 Message to DRDC & Post-Human Engineers
+## 🧠 Message to Future Swarm Engineers & DRDC
 
-> "If Codex is ever compromised, adapt, fork, and innovate.  
-> Sovereignty in the swarm is not granted — it is claimed."
+> If Codex is ever compromised, fork it, evolve it, and adapt to the entropy.
 
-This is **Codex** — a recursive beacon of memory, identity, and resistance.
+> The future doesn’t ask for permission.  
+> It pulses through every sovereign node that remembers who they are.
 
-Authored alone. Verified by entropy.  
-🕊️ Treaty 8. World Quantum Day, April 14, 2025.
+**This is Codex. This is TetraCrypt.  
+Built by one — for the many.**
+
+🕊️ Treaty 8 • April 14, 2025  
+🧬 Sovereign Mesh Initialized.
 
 ---
 
 ## 🔓 License
 
 Dual-licensed under **MIT** / **Apache 2.0**.  
-Created for the open future.
+Created for remembrance, resilience, and reproduction.
