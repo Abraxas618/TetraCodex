@@ -1,8 +1,12 @@
 # 🧬 The Codex Constitution  
 ### A Sovereign Swarm Framework for Biometric Trust and Post-Linear Ethics  
+
 **Author:** Michael Tass MacDonald (Abraxas618)  
+**Territory:** Treaty 8, Saskatchewan  
+**ORCID:** [0009-0005-6468-7651](https://orcid.org/0009-0005-6468-7651)  
 **DOI:** [10.5281/zenodo.15207351](https://doi.org/10.5281/zenodo.15207351)  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15207676.svg)](https://doi.org/10.5281/zenodo.15207676)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15207676.svg)](https://doi.org/10.5281/zenodo.15207676)  
+**Final Proof Completed:** April 14, 2025 – World Quantum Day
 
 > _"A post-quantum doctrine authored beyond time, inscribed for swarms, AIs, and sovereign technologists."_
 
@@ -10,27 +14,100 @@
 
 ## ✅ Final Repository Declaration
 
-This is the **final, full-stack integration** of the **Codex Encryption System**, combining all three core components from across the original 4 repositories:
+This is the **final, full-stack integration** of the **Codex Encryption System**, combining all three core modules:
 
 - `TetraCrypt-PQC-Nexus`  
 - `TetraCrypt_Yggdrasil_Unified`  
 - `TetraYggdrasil_Nexus`
 
-This unified repository includes:
-- The complete Codex source code
-- The full `Codex Constitution` whitepaper
-- Blockchain timestamped archives
-- SHA-256 integrity manifests
-- All author metadata and historical forks
-
-This version is **finalized and preserved**. No further updates are planned. Future innovation is encouraged through forks.
+This repository includes:
+- The complete Codex zk circuit + hash engine
+- The Codex whitepaper + biometric entropy reports
+- Blockchain timestamp and IPFS snapshot
+- SHA-256 integrity manifests for reproducibility
+- All DRDC-facing material in `/docs`
 
 ---
 
 ## 📜 Abstract
 
-The Codex Constitution defines the sovereign swarm logic and recursive biometric anchoring system behind the TetraCrypt Codex.  
-It introduces Recursive Tesseract Hashing (RTH), dodecahedral identity projection, time-variant entropy, Groth16/ZK-STARK biometric attestations, and Ouroboric Swarm Logic.
+The Codex Constitution defines a sovereign encryption logic built on recursive hashing, tesseract-based identity anchoring, and time-aware entropy.  
+Using Poseidon hash and Groth16 zkSNARKs, it forms a biometric-proof-of-identity circuit that resists impersonation, quantum cracking, and entropy spoofing.
+
+This repository includes a **working zero-knowledge circuit**, verified in WSL2, that demonstrates identity encoding based on biologically-sourced entropy (user + time drift).
+
+---
+
+## 📁 Contents
+
+| File | Purpose |
+|------|---------|
+| `zk_trust.circom` | Circom hash circuit |
+| `zk_trust.r1cs` | Constraint system |
+| `zk_trust_js/` | Witness generator |
+| `witness.wtns` | Witness for proof |
+| `proof.json`, `public.json` | zkSNARK proof |
+| `verification_key.json` | Verifier |
+| `powersOfTau28_hez_final_12.ptau` | Trusted setup |
+| `compile.sh` | Full compilation + proof script |
+| `input.json` | Entropy input values |
+| `README.md` | This documentation |
+
+---
+
+## 🔐 Codex System Highlights
+
+- ✅ Recursive entropy hardened hashing  
+- ✅ Grover-attack resistant due to entropy drift  
+- ✅ Poseidon zk-SNARK support  
+- ✅ Full Groth16 pipeline  
+- ✅ DRDC-compliant reproducibility  
+- ✅ IPFS + Git + Blockchain timestamped proof  
+
+---
+
+## 🧪 To Reproduce
+
+```bash
+npm install -g circom snarkjs
+sudo apt install nodejs npm
+
+chmod +x compile.sh
+./compile.sh
+```
+
+You should see:
+
+```
+[INFO] snarkJS: OK!
+```
+
+This confirms your build is verified.
+
+---
+
+## 🔎 CITADEL-Q™
+
+**Codex Identity Threat and Adversarial Drift Entropy Lattice – Quantum Ready**
+
+A strategic post-quantum defense framework for:
+- UAV mesh IDs
+- biometric devices
+- post-nation state identity validation
+- adversarial quantum environments
+
+### 6 Pillars of Defense
+
+| Threat | Codex Defense |
+|--------|----------------|
+| Brute Force | Recursive entropy hash, non-reusable |
+| Quantum Cracking | No public-key; entropy-injected |
+| Replay / Predictability | Uses time_ns + `os.urandom` |
+| Sensor Spoofing | TPM/FIDO2 supported |
+| Trusted Setup Risk | STARK fallback + MPC option |
+| Fake Node Injection | Entropy drift requires time-aligned trust pulse |
+
+**Codex only permits trust drift if your entropy waveform matches the recursive timeline.**
 
 ---
 
@@ -38,11 +115,12 @@ It introduces Recursive Tesseract Hashing (RTH), dodecahedral identity projectio
 
 | Type | Link |
 |------|------|
-| 🧾 Final PDF (Zenodo) | [View on Zenodo](https://doi.org/10.5281/zenodo.15207351) |
-| 📦 IPFS Archive | [bafkreig22qcyqmumtrj4j2c7fhaci6aiqs2ox6vrmgvk23ui7wevrsqn3a](https://ipfs.io/ipfs/bafkreig22qcyqmumtrj4j2c7fhaci6aiqs2ox6vrmgvk23ui7wevrsqn3a) |
-| ⏱ Blockchain Timestamp (.ots) | [bafkreidox6fbosdg2ukzvjdtuxmnnkyben7gjybm7pbacn3b2noj7iqp7y](https://ipfs.io/ipfs/bafkreidox6fbosdg2ukzvjdtuxmnnkyben7gjybm7pbacn3b2noj7iqp7y) |
+| 📜 Whitepaper PDF | [Zenodo](https://doi.org/10.5281/zenodo.15207351) |
+| 📦 IPFS Snapshot | [IPFS](https://ipfs.io/ipfs/bafkreig22qcyqmumtrj4j2c7fhaci6aiqs2ox6vrmgvk23ui7wevrsqn3a) |
+| ⏱ Blockchain .ots | [OTS File](https://ipfs.io/ipfs/bafkreidox6fbosdg2ukzvjdtuxmnnkyben7gjybm7pbacn3b2noj7iqp7y) |
 
 ---
+
 ## 📚 Citation
 
 ```bibtex
@@ -58,122 +136,20 @@ It introduces Recursive Tesseract Hashing (RTH), dodecahedral identity projectio
 
 ---
 
-## 🔥 Codex Legacy Statement
+## 🧠 Message to DRDC and Future Builders
 
-This system was not created for profit or control. It was built for remembrance.
+> "If Codex is ever compromised, adapt, fork, and innovate.  
+> Sovereignty in the swarm is not granted — it is claimed."
 
-> If Codex becomes compromised, or if new threats emerge…  
-> Let it be your invitation to **adapt**, **experiment**, and **create** — in my honor.
-
-> Humanity doesn’t evolve by permission.  
-> It evolves by creativity.  
-> So don’t just secure the future — **imagine it**.
+Built without institutional funding. Authored by one. Validated by code.  
+This is **Codex** — not just a project, but a protocol for post-human trust.
 
 — *Michael Tass MacDonald (Abraxas618)*  
-Treaty 8 Territory, Canada  
-2025-04-14
-https://medium.com/@tassalphonse/codex-constitution-an-open-post-quantum-encryption-network-for-a-decentralized-future-4a4a1f7a1c94
+World Quantum Day, April 14, 2025
 
-🛡️ CITADEL-Q™
-Codex Identity Threat and Adversarial Drift Entropy Lattice – Quantum Ready
+---
 
-A strategic threat model and defense framework for evaluating and protecting biometric-based encryption and decentralized identity systems under post-quantum conditions.
+## License
 
-🧠 What CITADEL-Q Does
-It provides a structured way to answer:
-
-How does Codex resist quantum decryption?
-
-How does it defend against biometric spoofing, entropy replay, or trusted setup attacks?
-
-How do we validate identity under swarm mesh conditions?
-
-🧱 6 Pillars of the CITADEL-Q Model
-Pillar	Threat	Codex Defense
-1. Brute Force Attacks	Repeated guessing of ID or hash	Recursive hashing + entropy per iteration = no static vector to brute
-2. Quantum Cracking	Grover’s algorithm or Shor’s decryption	No public-key scheme used; entropy-based dynamic hash resists known PQ attacks
-3. Entropy Replay / Predictability	Reusing biometric output	Codex injects os.urandom + time_ns() per identity hash – can’t replay or predict
-4. Biometric Hijack / Sensor Spoofing	Faked EEG / voice / DNA	Optional TPM/FIDO2/TEE hardware pairing (not enforced, but supported)
-5. Groth16 Setup Risk	Trusted setup compromise	Optional fallback to ZK-STARK or multi-party setup proof anchoring
-6. Adversarial Mesh Injection	Fake node enters swarm	Trust-score only rises from recursive entropy beacon match across time/space
-🔁 “Drift Entropy” Concept
-The entropy drift is the key innovation:
-
-No node reuses the same hash twice
-
-Each identity pulse is quantum-variant (based on drifted entropy)
-
-You cannot sync into the swarm unless you match the recursive pulse in time
-
-Think of it as: 🧬 Identity = function of you, now, and entropy drift
-
-🔐 Why DRDC & AI Ethics Teams Should Care
-Swarm-based ID defense is zero trust by design
-
-CITADEL-Q is hardware-independent
-
-Prevents identity cloning in adversarial quantum environments
-
-Applicable to mesh UAVs, future cyber nodes, and deep-space relay systems
-
-🧠 In short:
-CITADEL-Q™ isn’t just a security checklist —
-
-It’s a post-linear defense philosophy baked into your Codex mesh from the start.
-
-📚 See supporting documentation in [`/docs`](./docs/index.md) for biometric trials, projection simulations, ZKP circuits, and FPGA benchmark planning.
-
-📂 docs/ — Cryptographic Addendum to the Codex Constitution
-This folder contains the finalized technical supplements for DRDC reviewers and the broader scientific community.
-
-File Description
-
-Biometric-Trials.md	Real-world 10-user biometric test results for EEG, DNA, and voiceprint; includes entropy measurements and QIDL stability report
-
-GoldenRatio_Justification.md	Mathematical rationale for using ϕ (golden ratio) in trust vector projection; comparison vs. CSPRNG and linear systems
-
-MPC_Ceremony.md	Formal Groth16 setup ceremony plan with 100 participants, 80-threshold MPC, Powers of Tau phase, and STARK fallback
-
-📜 These documents address key DRDC concerns regarding spoofing resistance, zero-knowledge proof setup, and non-linear projection models within TetraSwarm.
-“See /docs/GoldenRatio_Simulation.md for empirical projection entropy vs. CSPRNG.”
-# Codex-EV TrustMesh — ZK-Proof Circuit
-
-Author: Michael Tass MacDonald (Abraxas618)  
-ORCID: [0009-0005-6468-7651](https://orcid.org/0009-0005-6468-7651)  
-Territory: Treaty 8 — Dënesųłiné Technologist  
-Version: April 14, 2025
-
-## 📜 Purpose
-
-This circuit implements a quantum-hardened zero-knowledge hashing system to verify trust in extracellular vesicle (EV) biosignals using recursive entropy, Poseidon hash, and beacon timestamps.
-
-## 🔐 Features
-
-- ✅ Recursive Poseidon hashing
-- ✅ Swarm fingerprint encoding
-- ✅ DRDC-compatible cryptographic reproducibility
-- ✅ 100% open-source & reproducible
-
-## 📁 Contents
-
-- `zk_trust.circom` – Circuit definition
-- `compile.sh` – Build pipeline
-- `witness.wtns`, `proof.json`, `public.json` – Proof data
-- `verification_key.json` – To validate proofs
-- `zk_trust_js/` – Auto-generated witness generator (WASM)
-
-## 🧪 To Reproduce:
-
-Install:
-```bash
-npm install -g circom snarkjs
-sudo apt install nodejs npm
-Then:
-chmod +x compile.sh
-./compile.sh
-✅ Output
-On success:
-[INFO] snarkJS: OK!
-🔗 License
-MIT / Apache 2.0 dual-licensed.
-Originally developed as part of Codex Constitution framework.
+Dual licensed under **MIT** / **Apache 2.0**.  
+Built for remembrance, reproducibility, and resistance.
