@@ -1,84 +1,78 @@
+# 🧪 Codex ZK Trust Circuit
 
-# 🧪 Codex ZK Trust Circuit  
-### 📍 docs/zk/README.md  
-**Author:** Michael Tass MacDonald (Abraxas618)  
-**Date:** April 14, 2025  
+This directory contains the **Groth16 zero-knowledge circuit** used to verify trust anchor scores in the Codex Constitution framework. It ensures that swarm identity validation and trust scoring can be verified without revealing any private biometric data.
 
----
-
-## 🔐 Zero-Knowledge Proof for Codex Trust Validation  
-This folder implements a minimal Groth16-compatible ZK circuit to prove the validity of Codex trust signals derived from entropy and timestamp data — without revealing private biometric sources.
+> 📁 Path: `/zk/`  
+> 🔒 Circuit Type: [Groth16](https://zokrates.github.io/introduction.html#zero-knowledge-proof-systems)  
+> 📐 Curve: BN256 (128-bit security)  
+> 🛠 Language: Circom v2  
 
 ---
 
-## 📁 Included Files  
+## 📜 Circuit Summary
 
-| File | Description |
-|------|-------------|
-| `zk_trust.circom` | Circom 2.0 circuit defining QIDL trust hash logic using Poseidon |
-| `input.json`      | Example input values (entropy, time salt) used for testing |
-| `compile.sh`      | Full end-to-end proof pipeline using `snarkjs` |
+- **Circuit File:** `zk_trust.circom`  
+- **Inputs:**  
+  - Private: Biometric QIDL hash, entropy salt  
+  - Public: Trust threshold, timestamp  
+- **Constraint System:** `zk_trust.r1cs`  
+- **WASM Witness Generator:** `zk_trust.wasm`
 
----
-
-## 🧮 Circuit Logic  
-
-The circuit implements the following hash computation:
-hash = Poseidon([user_entropy, time_salt])
-
-- `user_entropy` is derived from EEG/DNA/voiceprint inputs  
-- `time_salt` is derived from `time_ns()` and `os.urandom()`  
-- Output `hash` = QIDL anchor (codified swarm node identity)
+This circuit ensures a user has a valid swarm trust signature above a threshold, without revealing private inputs.
 
 ---
 
-## 🚀 Running the Circuit  
+## ⚙️ Build & Proof Workflow
 
-Make sure you have the following installed:
-
-- [Circom 2.0](https://docs.circom.io/)
-- [SnarkJS](https://github.com/iden3/snarkjs)
-- Node.js ≥ 16
-
-Then run:
+Run the following script after installing [Circom](https://docs.circom.io/) and [SnarkJS](https://github.com/iden3/snarkjs):
 
 ```bash
-cd docs/zk
 bash compile.sh
-This will:
+This automates the steps:
 
-Compile the circuit to .r1cs and .wasm
+Compile the circuit (zk_trust.circom)
 
-Run a Powers of Tau trusted setup
+Generate the witness (witness.wtns)
 
-Generate the witness and zk-SNARK proof
+Run trusted setup (circuit_final.zkey)
 
-Output proof.json and public.json
+Create proof (proof.json)
 
-Verify the proof against verification_key.json
+Output verification key (verification_key.json)
 
-✅ Output Files
+Test verification
+
+📦 File Descriptions
 File	Purpose
-zk_trust.r1cs	Compiled constraint system
-zk_trust.wasm	Witness generation binary
-circuit_final.zkey	Final proving key
-witness.wtns	Witness values for inputs
-proof.json	ZK proof
-public.json	Public inputs for verifier
-verification_key.json	Public verifier key
-📦 Example Use Case
-This circuit can be embedded into the Codex backend or a smart contract verifier to validate:
+zk_trust.circom	Core zero-knowledge circuit
+zk_trust.r1cs	Constraint system (compiled)
+zk_trust.wasm	WASM module to generate witness
+witness.wtns	Generated witness from inputs
+input.json	Private and public input data
+public.json	Public values for verification
+compile.sh	All-in-one build and proof script
+circuit_final.zkey	Final Groth16 proving key
+proof.json	Zero-knowledge proof result
+verification_key.json	Groth16 verifier key
+README.md	This document
+✅ Verifying the Proof
+snarkjs groth16 verify verification_key.json public.json proof.json
+Expected output: OK!
+This confirms that your circuit constraints are satisfied without revealing any private data.
 
-Node identity
+🔍 Purpose for DRDC
+This circuit is part of the Codex submission to Canada’s Defense Research and Development Canada (DRDC) and supports:
 
-Entropy freshness
+Verifiable Trust Anchors
 
-Swarm membership
+Privacy-Preserving Identity Systems
 
-Temporal anchoring
+Post-Quantum Ready ZKP Pipelines
 
-All without exposing raw biometrics.
+🧠 Contributors
+Michael Tass MacDonald (Abraxas618)
+Independent ZK Architect | Codex Constitution Author
+✉️ tassalphonse@gmail.com
 
-🛡 License
-This module is released under the MIT License, as part of the Codex Constitution project:
-➡️ https://github.com/Abraxas618
+📖 License
+Apache 2.0 / MIT Dual License
