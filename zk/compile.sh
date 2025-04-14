@@ -1,10 +1,26 @@
 #!/bin/bash
-circom zk_trust.circom --r1cs --wasm --sym -o zk_trust
-snarkjs powersoftau new bn128 10 pot10_0000.ptau -v
-snarkjs powersoftau contribute pot10_0000.ptau pot10_final.ptau --name="Codex MPC" -v
-snarkjs groth16 setup zk_trust/zk_trust.r1cs pot10_final.ptau zk_trust/circuit_0000.zkey
-snarkjs zkey contribute zk_trust/circuit_0000.zkey zk_trust/circuit_final.zkey --name="Codex Contributor" -v
-snarkjs zkey export verificationkey zk_trust/circuit_final.zkey zk_trust/verification_key.json
-snarkjs wtns calculate zk_trust/zk_trust.wasm input.json zk_trust/witness.wtns
-snarkjs groth16 prove zk_trust/circuit_final.zkey zk_trust/witness.wtns zk_trust/proof.json zk_trust/public.json
-snarkjs groth16 verify zk_trust/verification_key.json zk_trust/public.json zk_trust/proof.json
+
+# Step into project directory
+cd "$(dirname "$0")"
+
+# Paths
+CIRCUIT=zk_trust
+PTAU=powersOfTau28_hez_final_12.ptau
+
+# Compile
+circom $CIRCUIT.circom --r1cs --wasm --sym -l ./circomlib/circuits
+
+# Trusted setup
+snarkjs groth16 setup $CIRCUIT.r1cs $PTAU $CIRCUIT.zkey
+
+# Verification key
+snarkjs zkey export verificationkey $CIRCUIT.zkey verification_key.json
+
+# Witness
+node ${CIRCUIT}_js/generate_witness.js ${CIRCUIT}_js/${CIRCUIT}.wasm input.json witness.wtns
+
+# Proof
+snarkjs groth16 prove $CIRCUIT.zkey witness.wtns proof.json public.json
+
+# Verify
+snarkjs groth16 verify verification_key.json public.json proof.json
