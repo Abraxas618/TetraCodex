@@ -24,4 +24,24 @@ This folder implements a minimal Groth16-compatible ZK circuit to prove the vali
 ## 🧮 Circuit Logic  
 
 The circuit implements the following hash computation:
+hash = Poseidon([user_entropy, time_salt])
 
+- `user_entropy` is derived from EEG/DNA/voiceprint inputs  
+- `time_salt` is derived from `time_ns()` and `os.urandom()`  
+- Output `hash` = QIDL anchor (codified swarm node identity)
+
+---
+
+## 🚀 Running the Circuit  
+
+Make sure you have the following installed:
+
+- [Circom 2.0](https://docs.circom.io/)
+- [SnarkJS](https://github.com/iden3/snarkjs)
+- Node.js ≥ 16
+
+Then run:
+
+```bash
+cd docs/zk
+bash compile.sh
