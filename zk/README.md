@@ -22,25 +22,29 @@ This circuit ensures a user has a valid swarm trust signature above a threshold,
 
 ---
 
-## ⚙️ Build & Proof Workflow
+# 🧬 TetraCodex Zero-Knowledge Identity Verifier
 
-Run the following script after installing [Circom](https://docs.circom.io/) and [SnarkJS](https://github.com/iden3/snarkjs):
+This repo contains a working Circom pipeline for zk-SNARK-based identity verification using Poseidon hashing, recursive entropy trust, and Groth16 proving.
+
+## ✅ Quickstart (Ubuntu / WSL)
 
 ```bash
-bash compile.sh
-This automates the steps:
+# Clone this repo
+git clone https://github.com/Abraxas618/TetraCodex-ZK.git
+cd TetraCodex-ZK
 
-Compile the circuit (zk_trust.circom)
+# Install dependencies
+npm install -g circom snarkjs
 
-Generate the witness (witness.wtns)
+# Clone circomlib
+git clone https://github.com/iden3/circomlib.git
+mv circomlib ./circomlib  # Place in root
 
-Run trusted setup (circuit_final.zkey)
+# Run trusted setup + proof
+cd scripts
+chmod +x compile.sh
+./compile.sh
 
-Create proof (proof.json)
-
-Output verification key (verification_key.json)
-
-Test verification
 
 📦 File Descriptions
 File	Purpose
