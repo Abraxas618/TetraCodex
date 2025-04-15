@@ -19,18 +19,19 @@ jobs:
       with:
         node-version: '18'
 
-    - name: 🧩 Install Dependencies
+    - name: 🧩 Install circom + snarkjs
       run: |
-        npm install -g snarkjs circom
-        git clone https://github.com/iden3/circomlib.git zk/circomlib
+        npm install -g circom
+        npm install -g snarkjs
 
-    - name: 🔁 Run Codex ZK Pipeline
+    - name: 🔁 Compile ZK Circuit
       working-directory: ./zk
       run: |
         chmod +x compile.sh
         ./compile.sh
 
-    - name: ✅ Verify Proof Output
+    - name: ✅ Run Proof Verification
       working-directory: ./zk
       run: |
-        snarkjs groth16 verify verification_key.json public.json proof.json
+        chmod +x verify.sh
+        ./verify.sh
