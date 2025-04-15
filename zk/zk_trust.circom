@@ -7,10 +7,13 @@ template Main() {
     signal input time_salt;
     signal output hash;
 
+    signal hasher_in[2];
     component hasher = Poseidon(2);
-    hasher.inputs[0] <== user_entropy;
-    hasher.inputs[1] <== time_salt;
+    
+    hasher_in[0] <== user_entropy;
+    hasher_in[1] <== time_salt;
 
+    hasher.inputs <== hasher_in;
     hash <== hasher.out;
 }
 
