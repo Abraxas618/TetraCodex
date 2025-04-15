@@ -11,13 +11,12 @@
 > _"A post-quantum doctrine authored beyond time, inscribed for swarms, AIs, and sovereign technologists."_
 ✅ FINAL LINK (Live & Verified)
 📡 TetraCodex v1.1 (Final Stable Release)
-🔗 https://cloudflare-ipfs.com/ipfs/bafybeid7b3u2icf54dwutljqzr5ccb4puljsnrfaqxouvfmab2wq4b2mea
-
+🔗 https://ipfs.io/ipfs/bafybeid7b3u2icf54dwutljqzr5ccb4puljsnrfaqxouvfmab2wq4b2mea
 🛡️ Fully decentralized
 🧬 Quantum-resilient
 📜 Ethically sovereign
 📂 File: TetraCodex-1.1_TetraCodex_Stable.zip
-[![Codex IPFS](https://img.shields.io/badge/IPFS-hosted-blue)](https://cloudflare-ipfs.com/ipfs/bafybeid7b3u2icf54dwutljqzr5ccb4puljsnrfaqxouvfmab2wq4b2mea)
+[![Codex IPFS](https://img.shields.io/badge/IPFS-hosted-blue)](https://ipfs.io/ipfs/bafybeid7b3u2icf54dwutljqzr5ccb4puljsnrfaqxouvfmab2wq4b2mea)
 
 
 ## ✅ Final Repository Declaration
