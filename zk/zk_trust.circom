@@ -8,12 +8,12 @@ template Main() {
     signal output hash;
 
     signal hasher_in[2];
-    component hasher = Poseidon(2);
-    
     hasher_in[0] <== user_entropy;
     hasher_in[1] <== time_salt;
 
+    component hasher = Poseidon(2);
     hasher.inputs <== hasher_in;
+
     hash <== hasher.out;
 }
 
