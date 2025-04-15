@@ -171,3 +171,51 @@ Built by one — for the many.**
 
 Dual-licensed under **MIT** / **Apache 2.0**.  
 Created for remembrance, resilience, and reproduction.
+
+---
+
+## 🧪 ZK Integration Instructions (Verified 100% Working)
+
+This project includes a zero-knowledge proof module located in the `/zk/` directory. It has been fully tested and verified on Ubuntu 24.04 and WSL2 environments with Circom v2 and SnarkJS.
+
+### 🚀 To Run the Codex ZK Circuit
+
+1. Install dependencies:
+```bash
+npm install -g circom snarkjs
+```
+
+2. Navigate to the zk directory:
+```bash
+cd ./zk
+```
+
+3. Clone circomlib (Poseidon hashing dependency):
+```bash
+git clone https://github.com/iden3/circomlib.git
+```
+
+4. (Optional) Download `.ptau` if not included:
+```bash
+wget https://hermez.s3-eu-west-1.amazonaws.com/powersOfTau28_hez_final_12.ptau
+```
+
+5. Run the full pipeline:
+```bash
+chmod +x compile.sh
+./compile.sh
+```
+
+This will:
+- Compile the zk_trust.circom circuit
+- Generate a witness
+- Create a Groth16 proof
+- Verify the proof
+- Output `proof.json`, `public.json`, `verification_key.json`
+
+✅ If working correctly, you will see:
+```
+snarkjs: OK!
+```
+
+ZK module maintained by: **Michael Tass MacDonald (Abraxas618)**
