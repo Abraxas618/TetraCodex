@@ -9,14 +9,14 @@
 📅 **Final Proof Completed:** April 14, 2025 – *World Quantum Day*
 
 > _"A post-quantum doctrine authored beyond time, inscribed for swarms, AIs, and sovereign technologists."_
-✅ FINAL LINK (Live & Verified)
-📡 TetraCodex v1.1 (Final Stable Release)
-🔗 https://ipfs.io/ipfs/bafybeid7b3u2icf54dwutljqzr5ccb4puljsnrfaqxouvfmab2wq4b2mea
-🛡️ Fully decentralized
-🧬 Quantum-resilient
-📜 Ethically sovereign
-📂 File: TetraCodex-1.1_TetraCodex_Stable.zip
-[![Codex IPFS](https://img.shields.io/badge/IPFS-hosted-blue)](https://ipfs.io/ipfs/bafybeid7b3u2icf54dwutljqzr5ccb4puljsnrfaqxouvfmab2wq4b2mea)
+## 🔐 TetraCodex v1.1 (Final Stable Release)
+
+📦 [Download on IPFS](https://ipfs.io/ipfs/bafybeid7b3u2icf54dwutljqzr5ccb4puljsnrfaqxouvfmab2wq4b2mea)  
+🧬 Quantum-Safe • Zero-Knowledge • Biometric Sovereign Ledger  
+📁 TetraCodex-1.1_TetraCodex_Stable.zip  
+🔗 CID: `bafybeid7b3u2icf54dwutljqzr5ccb4puljsnrfaqxouvfmab2wq4b2mea`
+
+[![View on IPFS](https://img.shields.io/badge/hosted_on-IPFS-blue?logo=ipfs)](https://ipfs.io/ipfs/bafybeid7b3u2icf54dwutljqzr5ccb4puljsnrfaqxouvfmab2wq4b2mea)
 
 
 ## ✅ Final Repository Declaration
