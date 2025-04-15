@@ -1,27 +1,17 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
 set -e
-cd "$(dirname "$0")"
 
-CIRCUIT=zk_trust
-PTAU=powersOfTau28_hez_final_12.ptau
+echo "[*] Checking dependencies..."
+command -v circom >/dev/null 2>&1 || { echo >&2 "❌ circom not found. Install: npm i -g circom"; exit 1; }
+command -v snarkjs >/dev/null 2>&1 || { echo >&2 "❌ snarkjs not found. Install: npm i -g snarkjs"; exit 1; }
 
-echo "🔧 Compiling circuit..."
-circom $CIRCUIT.circom --r1cs --wasm --sym -l ./circomlib/circuits
+echo "[*] Compiling zk_trust.circom..."
+circom zk_trust.circom --r1cs --wasm --sym
 
-echo "🔐 Running trusted setup..."
-snarkjs groth16 setup $CIRCUIT.r1cs $PTAU $CIRCUIT.zkey
+echo "[*] Running trusted setup..."
+snarkjs groth16 setup zk_trust.r1cs powersOfTau28_hez_final_12.ptau zk_trust.zkey
 
-echo "🔑 Exporting verification key..."
-snarkjs zkey export verificationkey $CIRCUIT.zkey verification_key.json
+echo "[*] Exporting verification key..."
+snarkjs zkey export verificationkey zk_trust.zkey verification_key.json
 
-echo "🧠 Generating witness..."
-node ${CIRCUIT}_js/generate_witness.js ${CIRCUIT}_js/${CIRCUIT}.wasm input.json witness.wtns
-
-echo "📜 Creating proof..."
-snarkjs groth16 prove $CIRCUIT.zkey witness.wtns proof.json public.json
-
-echo "✅ Verifying proof..."
-snarkjs groth16 verify verification_key.json public.json proof.json
-
-echo "🚀 TetraCodex pipeline complete."
+echo "[✅] Compile process complete!"
