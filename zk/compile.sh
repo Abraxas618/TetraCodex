@@ -1,17 +1,13 @@
 #!/bin/bash
 
-set -e  # Exit on any error
-
-# Step into the directory of this script
+set -e
 cd "$(dirname "$0")"
 
-# Define names
 CIRCUIT=zk_trust
 PTAU=powersOfTau28_hez_final_12.ptau
 
 echo "🔧 Compiling circuit..."
 circom $CIRCUIT.circom --r1cs --wasm --sym -l ./circomlib/circuits
-
 
 echo "🔐 Running trusted setup..."
 snarkjs groth16 setup $CIRCUIT.r1cs $PTAU $CIRCUIT.zkey
