@@ -1,0 +1,37 @@
+name: Verify TetraCodex ZK Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: ⬇️ Checkout Repo
+      uses: actions/checkout@v3
+
+    - name: ⚙️ Install Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: 🧩 Install Dependencies
+      run: |
+        npm install -g snarkjs circom
+        git clone https://github.com/iden3/circomlib.git zk/circomlib
+        wget https://hermez.s3-eu-west-1.amazonaws.com/powersOfTau28_hez_final_12.ptau -P zk/
+
+    - name: 🔁 Run Codex ZK Pipeline
+      working-directory: ./zk
+      run: |
+        chmod +x compile.sh
+        ./compile.sh
+
+    - name: ✅ Verify Proof Output
+      working-directory: ./zk
+      run: |
+        snarkjs groth16 verify verification_key.json public.json proof.json
