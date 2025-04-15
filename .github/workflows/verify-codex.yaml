@@ -23,7 +23,6 @@ jobs:
       run: |
         npm install -g snarkjs circom
         git clone https://github.com/iden3/circomlib.git zk/circomlib
-        wget https://hermez.s3-eu-west-1.amazonaws.com/powersOfTau28_hez_final_12.ptau -P zk/
 
     - name: 🔁 Run Codex ZK Pipeline
       working-directory: ./zk
