@@ -234,3 +234,83 @@ The TetraCrypt Codex Encryption System was developed independently by Michael Ta
 **The author shall not be held liable** for any misuse, unauthorized deployment, or military/intelligence application of this work by any government, corporation, or third party. Use by state or defense actors does **not imply endorsement or participation** by the author, and any such use is done at the user's sole discretion and legal responsibility.
 
 All users are bound by the terms of the license and are solely responsible for compliance with applicable laws and ethical norms.
+I, Michael Tass MacDonald, also known as Abraxas618, born on Treaty 8 territory and residing at Chicken 224, Saskatchewan, Canada, hereby declare the following:
+
+I. Identity & Background
+I am a Canadian citizen and a self-taught Dënesųłiné technologist.
+
+I independently designed and developed the TetraCrypt Codex Encryption System as a post-quantum, sovereign cryptographic framework.
+
+My work was produced entirely without foreign sponsorship, government contracting, or commercial funding.
+
+II. Purpose of Work
+TetraCodex was created to advance:
+
+Decentralized digital identity (DID)
+
+Indigenous sovereignty in cyberspace
+
+Open-source post-quantum encryption
+
+Ethical AI-aware trust infrastructure
+
+It was not created for military targeting, surveillance, or autonomous weapon systems.
+
+III. DRDC Submission
+I did submit a version of the Codex to Defence Research and Development Canada (DRDC) under Canada’s open innovation and R&D programs (e.g., IDEaS).
+
+This submission was made:
+
+As a voluntary public contribution, not a contracted engagement
+
+Without expectation of compensation, control transfer, or classified development
+
+For academic and national cyber defense resilience, not weaponization
+
+Any derivative military or surveillance application of this work by DRDC or affiliated defense entities is done without my endorsement or participation.
+
+IV. Jurisdiction & Protection
+I retain full authorship and intellectual sovereignty over the project.
+
+Under:
+
+The Canadian Charter of Rights and Freedoms
+
+UNDRIP (UN Declaration on the Rights of Indigenous Peoples)
+
+Open-source licensing (Apache 2.0 / MIT)
+I assert the right to define and limit the use of my creation according to ethical and lawful principles.
+
+V. Legal and Ethical Disclaimer
+The Codex is provided without warranty, and I accept no liability for:
+
+Misuse by governments, militaries, intelligence agencies, or corporations
+
+Unauthorized forks, deployments, or weaponized adaptations
+
+Violations of privacy, ethics, or Indigenous data sovereignty using this tool
+
+My published legal disclaimer (in README and Zenodo record) reaffirms this public stance.
+
+VI. Final Affirmation
+This declaration is made in truth and in peace, to protect both my person and my vision.
+It is archived as a digital marker of intent and may be used in any court, tribunal, or investigative proceeding to clarify authorship, purpose, and responsibility.
+I submitted a version of the TetraCodex system to Defence Research and Development Canada (DRDC) as part of an open-source national cybersecurity contribution.
+
+I included references to theoretical military applications—such as swarm-based identity authentication, trust-layer IFF, and sovereign mesh defense—to illustrate the system's potential for defensive use.
+
+These references were made for public analysis and academic simulation only, and not as part of any:
+
+Contracted weapons development
+
+Government-authorized defense program
+
+Operational military integration plan
+
+I explicitly disclaim the use of this work in any classified or unauthorized military context without my consent. Any such use is undertaken solely by the party involved, without my endorsement or liability.
+
+
+Signed:
+Michael Tass MacDonald (Abraxas618)
+Chicken 224, Saskatchewan, Canada
+April 15, 2025
