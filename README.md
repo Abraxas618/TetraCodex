@@ -226,3 +226,11 @@ snarkjs: OK!
 ```
 
 ZK module maintained by: **Michael Tass MacDonald (Abraxas618)**
+---
+⚖️ **Legal Disclaimer**
+
+The TetraCrypt Codex Encryption System was developed independently by Michael Tass MacDonald (Abraxas618) and is released as an open-source project under the Apache 2.0 and MIT licenses. It is provided **without warranty**, for educational, research, and peaceful technological innovation purposes only.
+
+**The author shall not be held liable** for any misuse, unauthorized deployment, or military/intelligence application of this work by any government, corporation, or third party. Use by state or defense actors does **not imply endorsement or participation** by the author, and any such use is done at the user's sole discretion and legal responsibility.
+
+All users are bound by the terms of the license and are solely responsible for compliance with applicable laws and ethical norms.
