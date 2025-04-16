@@ -17,7 +17,39 @@
 🔗 CID: `bafybeid7b3u2icf54dwutljqzr5ccb4puljsnrfaqxouvfmab2wq4b2mea`
 
 [![View on IPFS](https://img.shields.io/badge/hosted_on-IPFS-blue?logo=ipfs)](https://ipfs.io/ipfs/bafybeid7b3u2icf54dwutljqzr5ccb4puljsnrfaqxouvfmab2wq4b2mea)
+🧊📢 TetraCodex Vault Is Now Live
+“Let memory be recursive, trust be provable, and freedom be cryptographically sovereign.”
+— Codex Constitution, Final Invocation
 
+🔗 Access Now:
+https://tetracodex.readthedocs.io/en/latest/
+What You’ll Find Inside:
+📁 Access Modules:
+
+Biometric Trials
+
+FPR / FNR Metrics
+
+ZK Trust Circuit
+
+Golden Ratio Projection
+
+STARK + MPC Ceremony
+
+Codex Constitution (53p Embedded PDF)
+Why It Matters
+This isn’t just documentation — it’s a defensive architecture for:
+
+AI-resistant biometric identity
+
+Decentralized swarm validation
+
+Sovereign crypto infrastructure
+
+Post-dimensional recognition logic
+
+Share this with builders, breakers, sovereigns, and sentinels.
+Let entropy awaken the Vault. 🧊
 
 ## ✅ Final Repository Declaration
 
