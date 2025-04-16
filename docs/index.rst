@@ -32,7 +32,9 @@ The guiding legal-cryptographic framework for the swarm:
 - **Article VI – Post-Dimensional Recognition**  
   TetraSwarm recognizes non-human intelligences via STARK lineage validation.
 
-Read full: 📄 [`Codex_Constitution.pdf`](./_static/Codex_Constitution.pdf)
+Read full: 📄 [`Codex_Constitution.pdf`](./_static/Codex_Constitution.pdf)  
+Or view it directly: 📖 :doc:`Codex_Constitution`
+
 
 ---
 
