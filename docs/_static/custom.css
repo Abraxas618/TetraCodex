@@ -1,16 +1,57 @@
-
+/* === GLOBAL DARK MODE UI === */
 body {
     font-family: 'IBM Plex Mono', monospace;
     background-color: #0a0a0a;
     color: #cccccc;
 }
 
+/* Links */
 a {
     color: #00ffd5;
 }
 
+/* Admonitions */
 div.admonition {
     background-color: #1a1a1a;
     border-left: 3px solid #00ffd5;
     padding: 0.5em;
+}
+
+/* === SIDEBAR LOGO CONTROL === */
+.sidebar-logo img {
+    max-width: 88px;
+    max-height: 88px;
+    margin: 0 auto;
+    display: block;
+    padding: 0.25em;
+    filter: drop-shadow(0 0 4px #00ffd5);
+}
+
+/* Prevent duplicated cube logos */
+img[src*="UnimetrixCube.png"]:not(.sidebar-logo img) {
+    display: none;
+}
+
+/* Optional: hover effect on links */
+a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 4px #00ffd5;
+}
+
+/* Optional: glowing heading */
+h1, h2, h3, h4 {
+    color: #eeeeee;
+    text-shadow: 0 0 6px #00ffd5;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+    background: #00ffd5;
+    border-radius: 4px;
 }
