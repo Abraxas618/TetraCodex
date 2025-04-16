@@ -1,7 +1,7 @@
+
 # -- Project Information -----------------------------------------------------
 
 project = 'TetraCodex'
-copyright = '2025, Michael Tass MacDonald'
 author = 'Michael Tass MacDonald (Abraxas618)'
 release = 'v1.0'
 
@@ -16,17 +16,18 @@ exclude_patterns = []
 
 # -- Options for HTML output -------------------------------------------------
 
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'furo'
+html_theme_options = {
+    "sidebar_hide_name": True,
+    "light_logo": "codex_logo_light.png",
+    "dark_logo": "codex_logo_dark.png",
+}
+html_title = "Codex R&D Vault"
+html_logo = "_static/codex_logo_dark.png"
 html_static_path = ['_static']
+html_css_files = ['custom.css']
 
-# -- MyST Configuration ------------------------------------------------------
-
-myst_enable_extensions = [
-    "deflist",
-    "fieldlist",
-    "html_admonition",
-    "html_image",
-]
+# -- Source Suffix Support ---------------------------------------------------
 
 source_suffix = {
     '.rst': 'restructuredtext',
