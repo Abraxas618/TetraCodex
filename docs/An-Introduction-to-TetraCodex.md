@@ -60,7 +60,7 @@ TetraCodex operates under a sovereign framework inspired by:
 - GitHub: https://github.com/Abraxas618/TetraCodex
 - Live Docs: https://tetracodex.readthedocs.io
 - DRDC Submission: (Pending)
-- Codex Constitution (PDF): Coming Soon
+- https://tetracodex.readthedocs.io/en/latest/Codex_Constitution.html
 
 ---
 
