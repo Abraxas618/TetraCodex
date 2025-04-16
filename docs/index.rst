@@ -1,10 +1,10 @@
 
-Codex R&D Vault
-===============
+Codex Vault: Knowledge Archive
+==============================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Access Modules
+   :caption: 📁 Access Modules
 
    Biometric-Trials
    EpocX_Biometric_Trial
@@ -17,7 +17,16 @@ Codex R&D Vault
 
 ----
 
-> ACCESS LEVEL: █ CLASSIFIED  
-> ARCHIVIST: Michael Tass MacDonald (Abraxas618)  
-> ENCRYPTION TYPE: Tesseract-RTH Hybrid  
-> STATUS: ⚫ Active
+📘 **Codex Vault Initialized**  
+Maintained by Michael Tass MacDonald (`Abraxas618`)  
+Built for sovereign biometric encryption and recursive quantum trust frameworks.  
+To unlock, traverse each classified entry.
+
+> All documents protected by Recursive Tesseract Hashing  
+> Rendered via MyST + Furo in hardened SCP terminal interface
+
+----
+
+© 2025 Michael Tass MacDonald  
+Unimetrix Cube Node v1.0 — Encryption is ∞
+
