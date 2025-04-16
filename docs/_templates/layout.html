@@ -1,7 +1,10 @@
 {% extends "!layout.html" %}
-{% block sidebarlogo %}
-<a href="{{ pathto(master_doc) }}">
-    <img src="{{ pathto('_static/UnimetrixCube.png', 1) }}" alt="Home" style="height:28px; margin: 8px auto;" />
-</a>
-{{ super() }}
+
+{% block content %}
+  <div style="background-color:#0a0a0a; padding: 0.75em; border-bottom: 1px solid #222;">
+    <a href="{{ pathto(master_doc) }}" style="color: #00ffd5; font-family: 'IBM Plex Mono', monospace; font-size: 0.95em;">
+      🧊 Return to Vault Home
+    </a>
+  </div>
+  {{ super() }}
 {% endblock %}
