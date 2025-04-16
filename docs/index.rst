@@ -1,13 +1,16 @@
-📚 Codex Supporting Documentation
-=================================
+Codex Supporting Documentation
+==============================
 
 .. toctree::
    :maxdepth: 1
-   :caption: Codex Modules
+   :caption: Modules
    :glob:
 
-   *.md
-
-----
-
-> Maintained by Michael Tass MacDonald (Abraxas618)
+   Biometric-Trials.md
+   EpocX_Biometric_Trial.md
+   FPGA_Benchmark.md
+   FPR_FNR_Metrics.md
+   GoldenRatio_Justification.md
+   GoldenRatio_Simulation.md
+   MPC_Ceremony.md
+   ZK_Circuit_Sketch.md
