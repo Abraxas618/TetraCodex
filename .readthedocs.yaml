@@ -11,6 +11,11 @@ build:
 sphinx:
   configuration: docs/conf.py
 
+# ✅ Tell ReadTheDocs to include your templates
+include:
+  - docs/_templates/
+  - docs/_static/
+
 python:
   install:
     - requirements: docs/requirements.txt
