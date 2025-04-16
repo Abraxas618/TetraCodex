@@ -35,7 +35,6 @@ The guiding legal-cryptographic framework for the swarm:
 Read full: 📄 [`Codex_Constitution.pdf`](./_static/Codex_Constitution.pdf)  
 Or view it directly: 📖 :doc:`Codex_Constitution`
 
-
 ---
 
 .. toctree::
@@ -43,6 +42,7 @@ Or view it directly: 📖 :doc:`Codex_Constitution`
    :caption: 📁 Access Modules
 
    An-Introduction-to-TetraCodex
+   Codex_Constitution
    Biometric-Trials
    EpocX_Biometric_Trial
    FPGA_Benchmark
