@@ -3,7 +3,7 @@ Codex Supporting Documentation
 
 .. toctree::
    :maxdepth: 2
-   :caption: Modules
+   :caption: Codex Modules
 
    Biometric-Trials
    EpocX_Biometric_Trial
