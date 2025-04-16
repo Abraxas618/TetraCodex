@@ -19,11 +19,13 @@ exclude_patterns = []
 html_theme = 'furo'
 html_theme_options = {
     "sidebar_hide_name": True,
-    "light_logo": "codex_logo_light.png",
-    "dark_logo": "codex_logo_dark.png",
+    "light_logo": "UnimetrixCube.png",
+    "dark_logo": "UnimetrixCube.png",
 }
+
 html_title = "Codex R&D Vault"
-html_logo = "_static/codex_logo_dark.png"
+html_logo = "_static/UnimetrixCube.png"
+html_favicon = "_static/UnimetrixCube.png"
 html_static_path = ['_static']
 html_css_files = ['custom.css']
 
