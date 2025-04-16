@@ -13,3 +13,7 @@ Codex Supporting Documentation
    GoldenRatio_Simulation
    MPC_Ceremony
    ZK_Circuit_Sketch
+
+----
+
+> Maintained by Michael Tass MacDonald (Abraxas618)
