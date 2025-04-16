@@ -1,19 +1,67 @@
+
 # 🛡 MPC Ceremony for Groth16 Setup (Codex Constitution)
 
-## Overview
-To establish a secure trusted setup for the Groth16 ZK-SNARK circuit used in Codex, we propose the following multi-party computation (MPC) strategy.
+> **Objective:** Establish a secure multi-party trusted setup for Codex ZK-SNARKs using the Groth16 scheme with fallback to STARK-based verification.
 
-## ⚙️ Parameters
-- Curve: BN256
-- Participants: 100
-- Threshold: 80 (minimum required honest parties)
-- Setup: Powers of Tau (Phase 1) + Custom Circuit (Phase 2)
+---
+
+## 🧾 Overview
+
+To initiate Codex cryptographic infrastructure, we define a formal Groth16 ceremony for recursive identity hashing and privacy-preserving biometric proof verification.
+
+This setup is essential for:
+- Verifiable circuit initialization
+- Swarm-wide recursive hashing functions
+- Liveness and identity ZK proofs
+
+---
+
+## ⚙️ Ceremony Parameters
+
+| Parameter       | Value                             |
+|-----------------|------------------------------------|
+| Curve           | BN256                              |
+| Participants    | 100                                |
+| Threshold        | 80 (minimum honest contributions)  |
+| Setup Phases    | Phase 1: Powers of Tau  
+                  Phase 2: Codex Custom Circuit        |
+
+---
 
 ## 🔐 Security Strategy
-- Ceremony inputs seeded by each party using entropy + randomness from `drand` or equivalent.
-- All contributions verifiably published on IPFS.
-- Optional: Live recording or hash-logged ceremony for audit by DRDC or third-party observers.
 
-## ✅ Fallback
-If trust assumptions are invalidated, Codex supports STARK-based ZKP generation as trustless backup.
+- 🔹 **Entropy Sourcing**:  
+  Every party contributes randomness seeded by:
+  - Local entropy source  
+  - External randomness beacon (`drand`)  
+  - Optional biometric seed (EEG or voice hash)
 
+- 🔹 **Transparency**:  
+  - Contributions publicly published to IPFS  
+  - Final transcript hashed and cross-published to DRDC and SwarmChain
+
+- 🔹 **Optional Auditing Enhancements**:
+  - Hash-logged ceremony feed (via SwarmOrchestrator)  
+  - Live recorded on-chain for observer trust
+
+---
+
+## 🔄 Fallback Path
+
+If trust assumptions are broken:
+- ✅ Codex supports migration to **STARK-based** circuits
+- ✅ Trustless proof generation
+- ✅ No trusted setup phase required
+
+---
+
+## 🧠 Integration Targets
+
+- `ZK_Liveness`: Proof of biometric signal entropy  
+- `CodexID`: Initial key material generation  
+- `SwarmRoot`: Verified quorum activation based on shared ceremony state
+
+---
+
+> *We do not trust. We prove.*  
+> — Codex Constitution, Section 4.1 – Ceremony Doctrine
