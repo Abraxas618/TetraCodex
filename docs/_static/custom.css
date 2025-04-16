@@ -1,57 +1,69 @@
-/* === GLOBAL DARK MODE UI === */
+/* ---------- Base Styling ---------- */
 body {
     font-family: 'IBM Plex Mono', monospace;
     background-color: #0a0a0a;
     color: #cccccc;
+    font-size: 15px;
 }
 
-/* Links */
 a {
     color: #00ffd5;
 }
 
-/* Admonitions */
 div.admonition {
     background-color: #1a1a1a;
     border-left: 3px solid #00ffd5;
     padding: 0.5em;
 }
 
-/* === SIDEBAR LOGO CONTROL === */
-.sidebar-logo img {
-    max-width: 88px;
-    max-height: 88px;
-    margin: 0 auto;
-    display: block;
-    padding: 0.25em;
-    filter: drop-shadow(0 0 4px #00ffd5);
+/* ---------- Global Scaling ---------- */
+html {
+    font-size: 90%;
 }
 
-/* Prevent duplicated cube logos */
-img[src*="UnimetrixCube.png"]:not(.sidebar-logo img) {
+@media (max-width: 768px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+/* ---------- Logo Fixes ---------- */
+.sidebar-logo-container img {
+    max-height: 55px !important;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+/* Remove duplicate logo if it renders twice */
+.sidebar-logo-container:nth-of-type(2) {
     display: none;
 }
 
-/* Optional: hover effect on links */
-a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 4px #00ffd5;
+/* ---------- Sidebar Styling ---------- */
+.sidebar {
+    background-color: #0f0f0f;
+    border-right: 1px solid #222;
 }
 
-/* Optional: glowing heading */
+.sidebar .sidebar-tree {
+    font-size: 14px;
+}
+
+/* ---------- TOC Panel (Right Side) ---------- */
+.toc {
+    background-color: #101010;
+    border-left: 1px solid #222;
+}
+
+/* ---------- Main Titles ---------- */
 h1, h2, h3, h4 {
-    color: #eeeeee;
-    text-shadow: 0 0 6px #00ffd5;
+    color: #ffffff;
 }
 
-/* Scrollbar customization */
-::-webkit-scrollbar {
-    width: 6px;
-}
-::-webkit-scrollbar-track {
-    background: #0a0a0a;
-}
-::-webkit-scrollbar-thumb {
-    background: #00ffd5;
-    border-radius: 4px;
+/* Improve code font readability */
+code {
+    color: #99e1e5;
+    background-color: #222222;
+    padding: 2px 5px;
+    border-radius: 3px;
 }
