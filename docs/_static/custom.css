@@ -1,0 +1,16 @@
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #0a0a0a;
+    color: #cccccc;
+}
+
+a {
+    color: #00ffd5;
+}
+
+div.admonition {
+    background-color: #1a1a1a;
+    border-left: 3px solid #00ffd5;
+    padding: 0.5em;
+}
