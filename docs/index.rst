@@ -43,8 +43,9 @@ Or view it directly: 📖 :doc:`Codex_Constitution`
    :maxdepth: 2
    :caption: 📁 Access Modules
 
+   🧊 TetraCodex Core <index>
    An-Introduction-to-TetraCodex
-   Codex_Constitution    <--- now linked to .md
+   Codex_Constitution
    Biometric-Trials
    EpocX_Biometric_Trial
    FPGA_Benchmark
