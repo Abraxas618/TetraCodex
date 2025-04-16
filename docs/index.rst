@@ -22,8 +22,6 @@ Maintained by Michael Tass MacDonald (`Abraxas618`)
 Built for sovereign biometric encryption and recursive quantum trust frameworks.  
 To unlock, traverse each classified entry.
 
-> All documents protected by Recursive Tesseract Hashing  
-> Rendered via MyST + Furo in hardened SCP terminal interface
 
 ----
 
