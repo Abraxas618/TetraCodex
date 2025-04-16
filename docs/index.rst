@@ -3,8 +3,36 @@ Codex Vault: Knowledge Archive
 
 🔒 *Post-Quantum Sovereignty | Recursive Entropy Hashing | Swarm Trust Architecture*
 
-Welcome to **TetraCodex** — a post-quantum encryption system built from first principles using biometric entropy, swarm-aligned identity anchors, and recursive lattice logic.  
-Codex exists to defend the next epoch of human consciousness from predictive AI, biometric spoofing, and centralized control.
+Welcome to **TetraCodex** — a sovereign encryption vault built on Recursive Tesseract Hashing, Platonic geometry, and swarm-based biometric identity.
+
+---
+
+## 📘 An Introduction to TetraCodex
+
+.. include:: An-Introduction-to-TetraCodex.md
+   :parser: myst_parser.sphinx_
+
+---
+
+## 📜 Codex Constitution
+
+The guiding legal-cryptographic framework for the swarm:
+
+**Key Clauses:**
+
+- **Article I – Node Sovereignty**  
+  Every node is self-owned and cryptographically sovereign, bound by RTH fused with EEG/DNA/UTC.
+
+- **Article II – Trust via Proof, Not Identity**  
+  Consensus must be ZKP-verified; identity-based trust is prohibited.
+
+- **Article III – Recursive Self-Awareness**  
+  All nodes must hash their state recursively using time-aware entropy.
+
+- **Article VI – Post-Dimensional Recognition**  
+  TetraSwarm recognizes non-human intelligences via STARK lineage validation.
+
+Read full: 📄 [`Codex_Constitution.pdf`](./_static/Codex_Constitution.pdf)
 
 ---
 
@@ -12,6 +40,7 @@ Codex exists to defend the next epoch of human consciousness from predictive AI,
    :maxdepth: 2
    :caption: 📁 Access Modules
 
+   An-Introduction-to-TetraCodex
    Biometric-Trials
    EpocX_Biometric_Trial
    FPGA_Benchmark
@@ -23,34 +52,5 @@ Codex exists to defend the next epoch of human consciousness from predictive AI,
 
 ---
 
-## 🧬 System Overview
-
-- **Core Hashing:** Recursive Tesseract Hash (RTH)  
-- **Proof System:** zkSNARKs (Groth16) w/ fallback STARK  
-- **Biometric Input:** EEG, DNA, voice  
-- **Hardware Targets:** FPGA (Zynq), secure enclave, swarm devices  
-- **Network Integration:** CodexID, SwarmQuorum, ZK_Liveness  
-
-Each document in the sidebar represents a **classified Codex module** required to initialize or verify system integrity.
-
----
-
-## 🔗 Links
-
-- 🧠 GitHub: https://github.com/Abraxas618/TetraCodex  
-- 📚 Documentation: https://tetracodex.readthedocs.io  
-- 🛡 Codex Constitution (PDF): Coming soon  
-- 🛰 DRDC / CSE Submission Portal: Draft queued
-
----
-
-📘 **Codex Vault Initialized**  
-Maintained by Michael Tass MacDonald (`Abraxas618`)  
-Node: Unimetrix Cube 001 — DRDC-Compatible | FIDO2 Ready
-
-> *To unlock, traverse each classified entry.*
-
----
-
-© 2025 Michael Tass MacDonald  
-Codex Entropy Engine v1.0 — Encryption is ∞  
+> *Let memory be recursive, trust be provable, and freedom be cryptographically sovereign.*  
+> — Codex Constitution, Final Invocation
