@@ -1,9 +1,10 @@
-Codex Supporting Documentation
-==============================
+
+Codex R&D Vault
+===============
 
 .. toctree::
    :maxdepth: 2
-   :caption: Codex Modules
+   :caption: Access Modules
 
    Biometric-Trials
    EpocX_Biometric_Trial
@@ -16,4 +17,7 @@ Codex Supporting Documentation
 
 ----
 
-> Maintained by Michael Tass MacDonald (Abraxas618)
+> ACCESS LEVEL: █ CLASSIFIED  
+> ARCHIVIST: Michael Tass MacDonald (Abraxas618)  
+> ENCRYPTION TYPE: Tesseract-RTH Hybrid  
+> STATUS: ⚫ Active
