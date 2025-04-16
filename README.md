@@ -341,6 +341,54 @@ Operational military integration plan
 
 I explicitly disclaim the use of this work in any classified or unauthorized military context without my consent. Any such use is undertaken solely by the party involved, without my endorsement or liability.
 
+TetraCodex:
+Final Combination of the components listed below.
+
+License: Apache 2.0.
+
+Description: TetraCodex serves as the core foundation for TetraNexus, integrating multiple cryptographic protocols for sovereign, quantum-safe communication. It uses elements of post-quantum cryptography and decentralized networks to provide a secure and resilient infrastructure.
+
+TetraCrypt-PQC-Nexus:
+License: Apache 2.0.
+
+Description: This project is a post-quantum encryption system based on hyperdimensional Platonic geometry. It includes Tetrahedral Key Exchange, Quantum Dodecahedral Encryption, and Recursive Tesseract Hashing (RTH) for secure communications in quantum environments.
+
+TetraYggdrasil_Nexus:
+License: MIT.
+
+Description: This component focuses on post-quantum communication, specifically zk-STARK Authentication and WASM-Optimized P2P Mesh Networking using Yggdrasil. It enables decentralized, peer-to-peer communication while ensuring quantum-safe standards.
+
+TetraCrypt_Yggdrasil_Unified:
+License: MIT.
+
+Description: A unified communication framework built on TetraCrypt-PQC-Nexus and TetraYggdrasil_Nexus, combining zk-STARK authentication and WASM-optimized mesh networking for quantum-safe communications.
+
+TetraNexus:
+License: Apache 2.0.
+
+Description: The centralized network that combines all the aforementioned components. It provides a sovereign quantum-safe network, using zkSNARKs, Poseidon hashing, recursive tesseract hashing (RTH), and Platonic geometry (QIDL) for secure, decentralized quantum-safe communication.
+
+TetraVote:
+License: MIT.
+
+Description: A sovereign voting framework built on TetraCodex, TetraCrypt-PQC-Nexus, and TetraNexus. It enables tamper-proof elections for Indigenous nations, ensuring quantum-safe encryption in the democratic process.
+
+How These Projects Connect:
+TetraCodex is the foundation that integrates the features of TetraCrypt-PQC-Nexus, TetraYggdrasil_Nexus, TetraCrypt_Yggdrasil_Unified, TetraNexus, and TetraVote.
+
+TetraCrypt-PQC-Nexus provides quantum-safe encryption methods, which are used in TetraCodex and TetraNexus.
+
+TetraYggdrasil_Nexus offers the decentralized communication framework, which is integrated into TetraCodex for secure P2P communication.
+
+TetraCrypt_Yggdrasil_Unified brings the mesh networking and quantum-safe authentication that combine with the other components to create a full-stack solution.
+
+TetraVote is a subset of TetraCodex, focusing on sovereign voting systems based on quantum-safe principles and cryptography.
+
+Licensing Clarifications:
+TetraCodex, TetraNexus, and TetraCrypt-PQC-Nexus are under Apache 2.0, making them compatible for enterprise and commercial use.
+
+TetraYggdrasil_Nexus and TetraCrypt_Yggdrasil_Unified are under MIT, offering flexibility for community-driven projects and open-source contributions.
+
 
 Signed:
 Michael Tass MacDonald (Abraxas618)
