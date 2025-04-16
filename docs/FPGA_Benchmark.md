@@ -1,90 +1,88 @@
-# FPGA Benchmark for TetraCodex Runtime
+# ⚙️ FPGA Benchmark for TetraCodex Runtime
 
-> **Objective:** Evaluate performance of Codex cryptographic primitives (RTH + QIDL) on real-time FPGA hardware, targeting edge deployment in sovereign environments.
+> **Objective:** Evaluate performance of Codex cryptographic primitives (RTH + QIDL) on real-time FPGA hardware for sovereign deployment.
 
 ---
 
-## ⚙️ Hardware Target
+## 🧬 Target Hardware Specification
 
-| Spec | Details |
-|------|---------|
-| Platform | Xilinx Zynq-7000 SoC (ARM + FPGA) |
-| Dev Kit | ZedBoard or Zybo Z7 |
-| Logic Cells | 85K–200K |
-| Clock Speed | 100 MHz – 667 MHz |
-| RAM | 512 MB – 1 GB |
-| OS (host) | Bare-metal or PetaLinux |
+| Spec         | Details                               |
+|--------------|----------------------------------------|
+| Platform     | Xilinx Zynq-7000 SoC (ARM + FPGA)      |
+| Dev Kit      | ZedBoard / Zybo Z7                     |
+| Logic Cells  | 85K–200K                               |
+| Clock Speed  | 100 MHz – 667 MHz                      |
+| RAM          | 512 MB – 1 GB                          |
+| Host OS      | Bare-metal or PetaLinux                |
 
 ---
 
 ## 🔐 Cryptographic Workloads
 
 ### 🔸 Recursive Tesseract Hashing (RTH)
-
-- Custom entropy hashing using 4D recursion
-- Benchmark: cycles per 1024-bit block
-- Target: ≤ 20ms per operation @ 100 MHz
+- 4D entropy-based hashing engine
+- Target: ≤ 20ms per 1024-bit block @ 100 MHz
 
 ### 🔸 Quantum Isoca-Dodecahedral Logic (QIDL)
+- Platonic-form S-box logic
+- Optimized with Poseidon-friendly architecture
+- Target: SNARK synth under 50ms
 
-- Platonic-encoded logic circuits
-- Includes Poseidon-based S-box optimization
-- Benchmark: SNARK-friendly circuit gate synthesis time
-
-### 🔸 MPC / STARK Hybrid Simulation
-
-- Optional: FPGA-coordinated secure multi-party ceremony controller
-- Test for latency under 2-user and 5-user STARK prep
+### 🔸 MPC / STARK Hybrid Coordination
+- Optional FPGA controller for STARK MPC prep
+- Target: 2-user & 5-user latency benchmarks
 
 ---
 
-## 🧪 Benchmark Goals
+## 🧪 Benchmark Targets
 
-| Metric | Target |
-|--------|--------|
-| RTH hash latency | ≤ 20ms |
-| Poseidon circuit synth | ≤ 50ms |
-| Power draw (idle) | ≤ 1.2W |
-| Thermal stability | ≤ 45°C sustained |
-| Embedded entropy RNG | Integrated or external TRNG fallback |
+| Metric                      | Target        |
+|-----------------------------|---------------|
+| RTH hash latency            | ≤ 20ms        |
+| Poseidon circuit synthesis  | ≤ 50ms        |
+| Idle power draw             | ≤ 1.2W        |
+| Sustained thermals          | ≤ 45°C        |
+| Entropy Source              | Embedded TRNG or external fallback |
 
 ---
 
 ## 📈 Deliverables
 
-- Hardware-in-the-loop benchmark logs
-- `.vhd` or `.sv` HDL files for hashing core
-- Vivado project files + resource utilization report
-- Codex runtime simulation graphs
-- Optional: GPIO-based biometric trigger interface
+- 🔁 Hardware-in-the-loop benchmark logs
+- 💾 HDL code: `.vhd`, `.sv` for recursive hash core
+- 📂 Vivado project files + LUT utilization
+- 📉 Runtime simulation plots (e.g., cycle-to-entropy)
+- 🔌 Optional: GPIO biometric trigger interface
 
 ---
 
-## 🧠 Use Case Alignment
+## 🧠 Codex Deployment Context
 
-This benchmark validates the deployment of TetraCodex:
-- In **air-gapped sovereign systems**
-- In **military-grade embedded nodes**
-- For **real-time liveness verification**
-- As a **hardware oracle in ZK rollups**
+This benchmark validates TetraCodex for:
+- Air-gapped sovereign installations
+- Tactical military-grade embedded nodes
+- ZK rollup trust anchors
+- Real-time biometric verification at the edge
 
 ---
 
 ## 📅 Timeline
 
-| Phase | Target Date |
-|-------|-------------|
-| HDL Simulation | Q2 2025 |
-| Vivado Synthesis | Q2 2025 |
-| Board Deployment | Q3 2025 |
-| RTH Runtime Integration | Q3/Q4 2025 |
+| Phase                | Target Date |
+|----------------------|-------------|
+| HDL Simulation       | Q2 2025     |
+| Vivado Synthesis     | Q2 2025     |
+| FPGA Board Deployment| Q3 2025     |
+| Codex Runtime Merge  | Q3/Q4 2025  |
 
 ---
 
-## 🔮 Future Goals
+## 🔮 Future Objectives
 
-- FPGA-to-DID pipeline → CodexID integration
-- Rollup proving on-chip → L2 trust anchors
-- PUF-assisted entropy → Embedded sovereign cryptography
+- FPGA-to-DID pipeline → `CodexID`
+- Embedded rollup proving layer → `L2 anchors`
+- Physical Unclonable Function (PUF) injection for quantum resilience
+
+---
 
 > *Let the Codex run where others can’t — in silence, at the edge, beyond interference.*
