@@ -1,3 +1,5 @@
+.. _Vault_Entrance:
+
 Codex Vault: Knowledge Archive
 ==============================
 
