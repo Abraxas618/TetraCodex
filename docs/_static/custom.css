@@ -1,69 +1,169 @@
-/* ---------- Base Styling ---------- */
-body {
-    font-family: 'IBM Plex Mono', monospace;
-    background-color: #0a0a0a;
-    color: #cccccc;
-    font-size: 15px;
+/* /docs/_static/custom.css (full true sovereign black patch, no hidden white, Sphinx >= 4.5, RTD theme, MyST, copybutton) */
+
+/* Global reset to eliminate hidden white */
+* {
+    background-color: #000000 !important; /* true black for all */
+    color: #eeeeee !important; /* sovereign light grey for all text */
 }
 
-a {
-    color: #00ffd5;
+/* HTML and body */
+html, body {
+    background-color: #000000 !important;
+    color: #eeeeee !important;
 }
 
-div.admonition {
-    background-color: #1a1a1a;
-    border-left: 3px solid #00ffd5;
-    padding: 0.5em;
+/* Left sidebar */
+.wy-nav-side {
+    background: #000000 !important;
 }
 
-/* ---------- Global Scaling ---------- */
-html {
-    font-size: 90%;
+/* Search box */
+.wy-side-nav-search, .wy-side-nav-search input[type="text"] {
+    background: #000000 !important;
+    color: #00ff00 !important; /* neon green for search text */
+    border-color: #00ff00 !important;
 }
 
-@media (max-width: 768px) {
-    html {
-        font-size: 85%;
-    }
+/* Scroll panel */
+.wy-side-scroll {
+    background: #000000 !important;
 }
 
-/* ---------- Logo Fixes ---------- */
-.sidebar-logo-container img {
-    max-height: 55px !important;
-    width: auto;
-    margin-bottom: 10px;
+/* Menu links */
+.wy-menu-vertical a {
+    color: #00ff00 !important; /* neon green links */
+    background: #000000 !important;
 }
 
-/* Remove duplicate logo if it renders twice */
-.sidebar-logo-container:nth-of-type(2) {
-    display: none;
+/* Menu link hover */
+.wy-menu-vertical a:hover {
+    background-color: #005500 !important; /* dark green hover */
+    color: #00ff00 !important;
 }
 
-/* ---------- Sidebar Styling ---------- */
-.sidebar {
-    background-color: #0f0f0f;
-    border-right: 1px solid #222;
+/* Main content area */
+.wy-nav-content {
+    background-color: #000000 !important;
+    color: #eeeeee !important;
 }
 
-.sidebar .sidebar-tree {
-    font-size: 14px;
+/* Tables */
+.wy-table-responsive table, .wy-table-responsive table td, .wy-table-responsive table th {
+    background: #000000 !important;
+    color: #eeeeee !important;
+    border-color: #00ff00 !important;
 }
 
-/* ---------- TOC Panel (Right Side) ---------- */
-.toc {
-    background-color: #101010;
-    border-left: 1px solid #222;
+/* Code blocks (reST and MyST Markdown) */
+.rst-content code, .rst-content pre.literal-block, .highlight, .highlight pre {
+    background: #222222 !important; /* dark grey code background */
+    color: #00ff00 !important; /* green code font */
+    border-color: #00ff00 !important;
 }
 
-/* ---------- Main Titles ---------- */
-h1, h2, h3, h4 {
-    color: #ffffff;
+/* Footer */
+footer, .wy-footer {
+    background: #000000 !important;
+    color: #eeeeee !important;
 }
 
-/* Improve code font readability */
-code {
-    color: #99e1e5;
-    background-color: #222222;
-    padding: 2px 5px;
-    border-radius: 3px;
+/* Search suggestions popups */
+div#search-results, div#search-results a {
+    background: #000000 !important;
+    color: #00ff00 !important;
+}
+
+/* Breadcrumb links */
+.rst-breadcrumbs, .rst-breadcrumbs a {
+    background-color: #000000 !important;
+    color: #00ff00 !important;
+}
+
+/* Version switcher */
+.rst-versions, .rst-versions a, .rst-versions .rst-current-version {
+    background-color: #000000 !important;
+    color: #00ff00 !important;
+}
+
+/* Vertical menu panel */
+div.wy-menu-vertical {
+    background: #000000 !important;
+}
+
+/* Top navigation and links */
+.wy-nav-top, .wy-nav-top a, .wy-side-nav-search a {
+    background: #000000 !important;
+    color: #00ff00 !important;
+}
+
+/* All links and hover states */
+a, .rst-content a {
+    color: #00ff00 !important;
+    background: #000000 !important;
+}
+a:hover, .rst-content a:hover {
+    background-color: #005500 !important; /* dark green hover */
+    color: #00ff00 !important;
+}
+
+/* Admonitions (notes, warnings, etc., including MyST styles) */
+.rst-content .admonition, .rst-content .admonition-title, .admonition.note, .admonition.warning, .admonition.danger, .admonition.attention {
+    background: #222222 !important; /* dark grey for admonitions */
+    color: #eeeeee !important;
+    border-color: #00ff00 !important;
+}
+
+/* Dropdowns and popups */
+.wy-dropdown-menu, .wy-dropdown-menu a {
+    background: #000000 !important;
+    color: #00ff00 !important;
+}
+
+/* Form elements */
+input, button, select, textarea {
+    background: #000000 !important;
+    color: #00ff00 !important;
+    border-color: #00ff00 !important;
+}
+
+/* Sphinx-copybutton specific styles */
+.copybtn {
+    background: #000000 !important;
+    color: #00ff00 !important;
+    border-color: #00ff00 !important;
+}
+.copybtn:hover {
+    background: #005500 !important;
+    color: #00ff00 !important;
+}
+
+/* MyST-parser specific styles (e.g., Markdown tables, code blocks) */
+.md-typeset table, .md-typeset th, .md-typeset td {
+    background: #000000 !important;
+    color: #eeeeee !important;
+    border-color: #00ff00 !important;
+}
+.md-typeset code, .md-typeset pre {
+    background: #222222 !important;
+    color: #00ff00 !important;
+    border-color: #00ff00 !important;
+}
+
+/* MyST admonitions and callouts */
+.md-typeset .admonition, .md-typeset .admonition-title {
+    background: #222222 !important;
+    color: #eeeeee !important;
+    border-color: #00ff00 !important;
+}
+
+/* Ensure no white in syntax highlighting */
+.highlight .hll, .highlight .c, .highlight .k, .highlight .o, .highlight .cm, .highlight .cp, .highlight .c1, .highlight .cs,
+.highlight .gd, .highlight .ge, .highlight .gr, .highlight .gh, .highlight .gi, .highlight .go, .highlight .gp, .highlight .gs,
+.highlight .gu, .highlight .gt, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt,
+.highlight .m, .highlight .s, .highlight .n, .highlight .na, .highlight .nb, .highlight .nc, .highlight .no, .highlight .nd,
+.highlight .ni, .highlight .ne, .highlight .nf, .highlight .nl, .highlight .nn, .highlight .nt, .highlight .nv, .highlight .ow,
+.highlight .w, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .sb, .highlight .sc, .highlight .sd,
+.highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss {
+    background: #222222 !important;
+    color: #00ff00 !important;
 }
