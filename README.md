@@ -388,7 +388,23 @@ Licensing Clarifications:
 TetraCodex, TetraNexus, and TetraCrypt-PQC-Nexus are under Apache 2.0, making them compatible for enterprise and commercial use.
 
 TetraYggdrasil_Nexus and TetraCrypt_Yggdrasil_Unified are under MIT, offering flexibility for community-driven projects and open-source contributions.
+## 📜 Immutable Archive Access
 
+The TetraUnified Codex archive has been blockchain-timestamped and permanently preserved.
+
+- 📦 [Download TetraUnified-Monorepo-Final-Fixed.tar.gz via IPFS](https://ipfs.io/ipfs/bafybeicwlnoxdpm2ipdd2ij7zpycarhq375rtizzl56xk6yklkrzoivuqq)
+- 🛡️ [Download Blockchain Timestamp Proof (.ots) via IPFS](https://ipfs.io/ipfs/bafkreiek6ccsabb6ltkcn42agj53c5dddzaloykdjz3yxo6ngknqw6focy)
+
+### Notes:
+- The GitHub repository `.zip` is an auxiliary version for browsing.
+- The official Codex archive is the `.tar.gz`, blockchain anchored in April 2025.
+
+### SHA256 (Original `.tar.gz`):
+89afcc2c8b219a6077d1f634762dcadd3e4617ca19771991c73891b732c41a74
+
+**Timestamp Proof File:**  
+`TetraUnified-Monorepo-Final-Fixed.tar.gz.ots`  
+Generated and verified via OpenTimestamps (Bitcoin anchored).
 
 Signed:
 Michael Tass MacDonald (Abraxas618)
